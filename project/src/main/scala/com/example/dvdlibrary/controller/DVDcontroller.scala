@@ -25,10 +25,17 @@ class DVDController {
   }
 
   @PostMapping(Array("/add"))
-  def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Unit] = {
-    dvdRepo.save(dvd)
-    ResponseEntity.status(HttpStatus.CREATED).build()
+  def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Void] = {
+    try {
+      //  JPA handles the foreign key associations
+      val savedDVD = dvdRepo.save(dvd)
+      new ResponseEntity[Void](HttpStatus.CREATED)
+    } catch {
+      case ex: Exception =>
+        new ResponseEntity[Void](HttpStatus.INTERNAL_SERVER_ERROR)
+    }
   }
+
 
 
   @DeleteMapping(Array("/{id}"))
