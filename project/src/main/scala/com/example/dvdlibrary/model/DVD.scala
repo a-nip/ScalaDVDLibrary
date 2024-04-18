@@ -1,4 +1,4 @@
-package src.main.com.example.dvdlibrary.model
+/*package src.main.com.example.dvdlibrary.model
 
 import java.sql.Date
 
@@ -28,7 +28,7 @@ class DVD private () {
   def setUserRatingNote(userRatingNote: Option[String]): Unit = _userRatingNote = userRatingNote
 }
 
-
+*/
 
 
 

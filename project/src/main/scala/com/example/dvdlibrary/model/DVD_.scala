@@ -1,6 +1,7 @@
 package com.example.dvdlibrary.model
 import java.time.LocalDate
 import javax.persistence._
+
 @Entity
 @Table(name = "dvd")
 class DVD {
@@ -14,6 +15,7 @@ class DVD {
 
   @Column(name = "releaseDate", nullable = false)
   var releaseDate: LocalDate = _
+
 
   @ManyToOne
   @JoinColumn(name = "directorID")
