@@ -23,11 +23,13 @@ class DVDController {
     val dvd = dvdRepo.findById(id).orElse(null)
     new ResponseEntity[DVD](dvd, HttpStatus.OK)
   }
+
   @PostMapping(Array("/add"))
   def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Unit] = {
     dvdRepo.save(dvd)
-    new ResponseEntity[Unit](HttpStatus.CREATED)
+    ResponseEntity.status(HttpStatus.CREATED).build()
   }
+
 
   @DeleteMapping(Array("/{id}"))
   def deleteDVD(@PathVariable("id") id: Long): ResponseEntity[Unit] = {
