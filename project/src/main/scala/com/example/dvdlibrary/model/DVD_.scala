@@ -7,7 +7,7 @@ import javax.persistence._
 class DVD {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "dvdID", nullable = false)
+  @Column(name = "dvdId", nullable = false)
   var id: Long = _
 
   @Column(name = "title", nullable = false)
@@ -18,15 +18,15 @@ class DVD {
 
 
   @ManyToOne
-  @JoinColumn(name = "directorID")
+  @JoinColumn(name = "directorId")
   var director: Director = _
 
   @ManyToOne
-  @JoinColumn(name = "studioID")
+  @JoinColumn(name = "studioId")
   var studio: Studio = _
 
   @ManyToOne
-  @JoinColumn(name = "ratingID")
+  @JoinColumn(name = "ratingId")
   var rating: Rating = _
 
   @Column(name = "userRatingNote")

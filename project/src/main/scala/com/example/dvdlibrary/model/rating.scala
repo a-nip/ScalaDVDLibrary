@@ -2,11 +2,11 @@ package com.example.dvdlibrary.model
 import java.time.LocalDate
 import javax.persistence._
 @Entity
-@Table(name = "mpaa_rating")
+@Table(name = "mpaaRating")
 class Rating {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "ratingID", nullable = false)
+  @Column(name = "ratingId", nullable = false)
   var id: Long = _
 
   @Column(name = "rating", nullable = false)

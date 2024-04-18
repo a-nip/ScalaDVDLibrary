@@ -7,7 +7,7 @@ import javax.persistence._
 class Director {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "directorID", nullable = false)
+  @Column(name = "directorId", nullable = false)
   var id: Long = _
 
   @Column(name = "directorName", nullable = false)

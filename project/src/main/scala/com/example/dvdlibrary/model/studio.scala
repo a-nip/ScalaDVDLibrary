@@ -7,7 +7,7 @@ import javax.persistence._
 class Studio {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "studioID", nullable = false)
+  @Column(name = "studioId", nullable = false)
   var id: Long = _
 
   @Column(name = "studioName", nullable = false)
