@@ -1,31 +1,35 @@
+DROP DATABASE IF EXISTS dvd;
+CREATE DATABASE dvd;
+USE dvd;
+
 DROP TABLE IF EXISTS director;
 CREATE TABLE director (
-	directorID INT AUTO_INCREMENT PRIMARY KEY,
-	directorName VARCHAR(255) NOT NULL
+	director_id INT AUTO_INCREMENT PRIMARY KEY,
+	director_name VARCHAR(255) NOT NULL
 );
 
 DROP TABLE IF EXISTS studio;
 CREATE TABLE studio (
-	studioID INT AUTO_INCREMENT PRIMARY KEY,
-	studioName VARCHAR(255) NOT NULL
+	studio_id INT AUTO_INCREMENT PRIMARY KEY,
+	studio_name VARCHAR(255) NOT NULL
 );
 
-DROP TABLE IF EXISTS mpaa-rating;
-CREATE TABLE mpaa-rating (
-	ratingID INT AUTO_INCREMENT PRIMARY KEY,
-	rating VARCHAR(2) NOT NULL
+DROP TABLE IF EXISTS mpaa_rating;
+CREATE TABLE mpaa_rating (
+	rating_id INT AUTO_INCREMENT PRIMARY KEY,
+	rating VARCHAR(50) NOT NULL
 );
 
 DROP TABLE IF EXISTS dvd;
 CREATE TABLE dvd (
-    dvdID INT AUTO_INCREMENT PRIMARY KEY,
+    dvd_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
-    releaseDate DATE NOT NULL,
-    directorID INT,
-    studioID INT,
-    ratingID INT,
-    userRatingNote TEXT,
-    FOREIGN KEY (directorID) REFERENCES director(directorID),
-    FOREIGN KEY (studioID) REFERENCES studio(studioID),
-    FOREIGN KEY (ratingID) REFERENCES mpaa-rating(ratingID)
+    release_date DATE NOT NULL,
+    director_id INT,
+    studio_id INT,
+    rating_id INT,
+    user_rating_note TEXT,
+    FOREIGN KEY (director_id) REFERENCES director(director_id),
+    FOREIGN KEY (studio_id) REFERENCES studio(studio_id),
+    FOREIGN KEY (rating_id) REFERENCES mpaa_rating(rating_id)
 );
