@@ -39,6 +39,20 @@ class DVDservice {
 
   }
 
+  def findByDirectorId(id: Long): List[DVD] = {
+    try {
+      val dvdList = dvdRepo.findDVDsByDirectorId(id)
+      if (dvdList.nonEmpty) {
+        dvdList
+      } else {
+        throw new DVDNotFoundException()
+      }
+    } catch {
+      case e: DataAccessException =>
+        throw new DVDDataAccessException("Error accessing DVD data", e)
+    }
+  }
+
   def addDVD(dvd: DVD): DVD = {
     try {
       (dvd.getId, dvd.getTitle, dvd.getReleaseDate) match {
@@ -72,6 +86,52 @@ class DVDservice {
     }
   }
 
+  def findByDirectorName(name: String): List[DVD] = {
+    val foundDvd = dvdRepo.findDVDsByDirectorName(name)
+
+    if (foundDvd.nonEmpty)
+      foundDvd
+    else
+      List.empty
+  }
+
+  def findDVDsByStudioName(studioName: String): List[DVD] = {
+    val foundDvds = dvdRepo.findDVDsByStudioName(studioName)
+
+    if (foundDvds.nonEmpty)
+      foundDvds
+    else
+      List.empty
+  }
+
+  def findDVDsByTitle(title: String): List[DVD] = {
+    val foundDvds = dvdRepo.findDVDsByTitle(title)
+
+    if (foundDvds.nonEmpty)
+      foundDvds
+    else
+      List.empty
+  }
+
+  def findDVDsByReleaseYear(year: Int): List[DVD] = {
+    val foundDvds = dvdRepo.findDVDsByReleaseYear(year)
+
+    if (!foundDvds.isEmpty)
+      foundDvds
+    else
+      List.empty
+  }
+
+  def findDVDsByRating(ratingTag: String): List[DVD] = {
+    val foundDvds = dvdRepo.findDVDsByRating(ratingTag)
+
+    if (foundDvds.nonEmpty)
+      foundDvds
+    else
+      List.empty
+  }
+  }
+
   class DVDNotFoundException(message: String) extends DataAccessException(message) {
     def this() = this("DVD is not found by ID")
     override def fillInStackTrace(): Throwable = this
@@ -96,4 +156,3 @@ class DVDservice {
     def this() = this("Error creating DVD", null)
     override def fillInStackTrace(): Throwable = this
   }
-}
