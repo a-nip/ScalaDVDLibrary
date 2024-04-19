@@ -11,7 +11,7 @@ import java.time.LocalDate
 class DVDService {
 
   @Autowired
-  private var dvdRepo: DVDRepo = scala.compiletime.uninitialized
+  private var dvdRepo: DVDRepo = _
 
   @Autowired
   def this(dvdRepo: DVDRepo) = {
@@ -82,7 +82,7 @@ class DVDService {
         throw new DVDDataAccessException("DVD not updated, Error accessing DVD data", e)
     }
   }
-  
+
   def findByDirectorName(name: String): List[DVD] = {
     val foundDvd = dvdRepo.findDVDsByDirectorName(name)
 

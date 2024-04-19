@@ -1,6 +1,6 @@
 package com.example.dvdlibrary.model
 
-import javax.persistence.*
+import javax.persistence._
 
 @Entity
 @Table(name = "studio")
