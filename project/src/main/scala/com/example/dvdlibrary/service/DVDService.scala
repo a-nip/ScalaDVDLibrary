@@ -5,19 +5,17 @@ import com.example.dvdlibrary.model.{DVD, Rating}
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.dao.DataAccessException
 import org.springframework.stereotype.Service
-
 import java.time.LocalDate
 import java.util.Collections.emptyList
 
-
 @Service
-class DVDservice {
+class DVDService {
 
   @Autowired
   private var dvdRepo: DVDRepo = _
 
   @Autowired
-  def this(dvdRepo: DVDRepo) {
+  def this(dvdRepo: DVDRepo) = {
     this()
     this.dvdRepo = dvdRepo
   }
@@ -37,7 +35,6 @@ class DVDservice {
       case e: DataAccessException =>
         throw new DVDDataAccessException("Error accessing DVD data", e)
     }
-
   }
 
   def findByDirectorId(id: Long): java.util.List[DVD] = {
@@ -117,7 +114,7 @@ class DVDservice {
   def findDVDsByReleaseYear(year: Int): java.util.List[DVD] = {
     val foundDvds = dvdRepo.findDVDsByReleaseYear(year)
 
-    if (!foundDvds.isEmpty)
+    if (foundDvds.nonEmpty)
       foundDvds
     else
       emptyList()
@@ -133,26 +130,26 @@ class DVDservice {
   }
   }
 
-  class DVDNotFoundException(message: String) extends DataAccessException(message) {
+  private class DVDNotFoundException(message: String) extends DataAccessException(message) {
     def this() = this("DVD is not found by ID")
     override def fillInStackTrace(): Throwable = this
   }
 
-  class DVDDataAccessException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
+  private class DVDDataAccessException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
     def this(message: String) = this(message, null)
 
     def this() = this("Error accessing DVD data", null)
     override def fillInStackTrace(): Throwable = this
   }
 
-  class DVDDataInputException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
+  private class DVDDataInputException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
     def this(message: String) = this(message, null)
 
     def this() = this("Input is invalid", null)
     override def fillInStackTrace(): Throwable = this
   }
 
-  class DVDCreationException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
+  private class DVDCreationException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
     def this(message: String) = this(message, null)
     def this() = this("Error creating DVD", null)
     override def fillInStackTrace(): Throwable = this
