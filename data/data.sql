@@ -1,4 +1,4 @@
-USE 
+USE dvd;
 INSERT INTO mpaa_rating (rating) VALUES ('PG-13'), ('PG'), ('R');
 
 
