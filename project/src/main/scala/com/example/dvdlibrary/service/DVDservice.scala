@@ -49,7 +49,7 @@ class DVDservice {
       }
     } catch {
       case e: Exception =>
-        throw new DVDDataAccessException()
+        throw new DVDCreationException()
     }
   }
 
@@ -68,24 +68,32 @@ class DVDservice {
       }
     } catch {
       case e: DataAccessException =>
-        throw new DVDDataAccessException("Error accessing DVD data", e)
+        throw new DVDDataAccessException("DVD not updated, Error accessing DVD data", e)
     }
   }
 
   class DVDNotFoundException(message: String) extends DataAccessException(message) {
     def this() = this("DVD is not found by ID")
+    override def fillInStackTrace(): Throwable = this
   }
 
   class DVDDataAccessException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
     def this(message: String) = this(message, null)
 
     def this() = this("Error accessing DVD data", null)
+    override def fillInStackTrace(): Throwable = this
   }
 
   class DVDDataInputException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
     def this(message: String) = this(message, null)
 
     def this() = this("Input is invalid", null)
+    override def fillInStackTrace(): Throwable = this
   }
 
+  class DVDCreationException(message: String, cause: Throwable) extends DataAccessException(message, cause) {
+    def this(message: String) = this(message, null)
+    def this() = this("Error creating DVD", null)
+    override def fillInStackTrace(): Throwable = this
+  }
 }
