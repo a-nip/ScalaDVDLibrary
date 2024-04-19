@@ -8,6 +8,6 @@ class DVDLibraryApplication
 
 object DVDLibraryApplication {
   def main(args: Array[String]): Unit = {
-    SpringApplication.run(classOf[DVDLibraryApplication], args: _*)
+    SpringApplication.run(classOf[DVDLibraryApplication], args*)
   }
 }

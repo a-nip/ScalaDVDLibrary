@@ -1,6 +1,5 @@
 package com.example.dvdlibrary.model
-import java.time.LocalDate
-import javax.persistence._
+import javax.persistence.*
 @Entity
 @Table(name = "mpaaRating")
 class Rating {

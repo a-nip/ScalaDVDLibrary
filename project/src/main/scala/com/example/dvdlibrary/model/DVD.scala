@@ -1,34 +1,58 @@
-/*package src.main.com.example.dvdlibrary.model
+package com.example.dvdlibrary.model
+import java.time.LocalDate
+import javax.persistence.*
 
-import java.sql.Date
+@Entity
+@Table(name = "dvd")
+class DVD {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "dvdId", nullable = false)
+  var id: Long = _
 
-class DVD private () {
-  private var _dvdID: Int = _
-  private var _title: String = _
-  private var _releaseDate: Date = _
-  private var _directorID: Int = _
-  private var _studioID: Int = _
-  private var _ratingID: Int = _
-  private var _userRatingNote: Option[String] = _
+  @Column(name = "title", nullable = false)
+  var title: String = _
 
-  def getDvdID(): Int = _dvdID
-  def getTitle(): String = _title
-  def getReleaseDate(): Date = _releaseDate
-  def getDirectorID(): Int = _directorID
-  def getStudioID(): Int = _studioID
-  def getRatingID(): Int = _ratingID
-  def getUserRatingNote(): Option[String] = _userRatingNote
+  @Column(name = "releaseDate", nullable = false)
+  var releaseDate: LocalDate = _
 
-  def setDvdID(dvdID: Int): Unit = _dvdID = dvdID
-  def setTitle(title: String): Unit = _title = title
-  def setReleaseDate(releaseDate: Date): Unit = _releaseDate = releaseDate
-  def setDirectorID(directorID: Int): Unit = _directorID = directorID
-  def setStudioID(studioID: Int): Unit = _studioID = studioID
-  def setRatingID(ratingID: Int): Unit = _ratingID = ratingID
-  def setUserRatingNote(userRatingNote: Option[String]): Unit = _userRatingNote = userRatingNote
+
+  @ManyToOne
+  @JoinColumn(name = "directorId")
+  var director: Director = _
+
+  @ManyToOne
+  @JoinColumn(name = "studioId")
+  var studio: Studio = _
+
+  @ManyToOne
+  @JoinColumn(name = "ratingId")
+  var rating: Rating = _
+
+  @Column(name = "userRatingNote")
+  var userRatingNote: String = _
+
+  // Getters
+  def getId: Long = id
+  def getTitle: String = title
+  def getReleaseDate: LocalDate = releaseDate
+  def getDirector: Director = director
+  def getStudio: Studio = studio
+  def getRating: Rating = rating
+  def getUserRatingNote: String = userRatingNote
+
+  // Setters
+  def setId(id: Long): Unit = this.id = id
+  def setTitle(title: String): Unit = this.title = title
+  def setReleaseDate(releaseDate: LocalDate): Unit = this.releaseDate = releaseDate
+  def setDirector(director: Director): Unit = this.director = director
+  def setStudio(studio: Studio): Unit = this.studio = studio
+  def setRating(rating: Rating): Unit = this.rating = rating
+  def setUserRatingNote(userRatingNote: String): Unit = this.userRatingNote = userRatingNote
 }
 
-*/
+
+
 
 
 

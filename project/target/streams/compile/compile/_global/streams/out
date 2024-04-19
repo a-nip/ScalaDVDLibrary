@@ -1,256 +1,262 @@
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:3:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:3:12: object springframework is not a member of package org
 [error] import org.springframework.boot.SpringApplication
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.boot.autoconfigure.SpringBootApplication
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:6:2: not found: type SpringBootApplication
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:6:2: not found: type SpringBootApplication
 [error] @SpringBootApplication
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:11:5: not found: value SpringApplication
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\Main.scala:11:5: not found: value SpringApplication
 [error]     SpringApplication.run(classOf[DVDLibraryApplication], args: _*)
 [error]     ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.beans.factory.annotation.Autowired
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:5:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:5:12: object springframework is not a member of package org
 [error] import org.springframework.http.{HttpStatus, ResponseEntity}
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:6:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:6:12: object springframework is not a member of package org
 [error] import org.springframework.web.bind.annotation._
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:9:2: not found: type RestController
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:9:2: not found: type RestController
 [error] @RestController
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:10:2: not found: type RequestMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:10:2: not found: type RequestMapping
 [error] @RequestMapping(Array("/dvd"))
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:11:2: not found: type CrossOrigin
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:11:2: not found: type CrossOrigin
 [error] @CrossOrigin
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:14:4: not found: type Autowired
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:14:4: not found: type Autowired
 [error]   @Autowired
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DVDRepo.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DVDRepo.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.data.jpa.repository.JpaRepository
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DVDRepo.scala:6:23: not found: type JpaRepository
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DVDRepo.scala:6:23: not found: type JpaRepository
 [error] trait DVDRepo extends JpaRepository[DVD, Long] {
 [error]                       ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:17:18: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:17:18: not found: type ResponseEntity
 [error]   def allDVDs(): ResponseEntity[java.util.List[DVD]] = {
 [error]                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:16:4: not found: type GetMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:16:4: not found: type GetMapping
 [error]   @GetMapping(Array("/dvds"))
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:18:24: value findAll is not a member of com.example.dvdlibrary.dao.DVDRepo
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:18:24: value findAll is not a member of com.example.dvdlibrary.dao.DVDRepo
 [error]     val dvds = dvdRepo.findAll()
 [error]                        ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:19:5: not found: value ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:19:5: not found: value ResponseEntity
 [error]     ResponseEntity.status(HttpStatus.OK).body(dvds)
 [error]     ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:19:27: not found: value HttpStatus
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:19:27: not found: value HttpStatus
 [error]     ResponseEntity.status(HttpStatus.OK).body(dvds)
 [error]                           ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:22:49: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:22:49: not found: type ResponseEntity
 [error]   def getDVDById(@PathVariable("id") id: Long): ResponseEntity[DVD] = {
 [error]                                                 ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:22:19: not found: type PathVariable
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:22:19: not found: type PathVariable
 [error]   def getDVDById(@PathVariable("id") id: Long): ResponseEntity[DVD] = {
 [error]                   ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:21:4: not found: type GetMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:21:4: not found: type GetMapping
 [error]   @GetMapping(Array("/{id}"))
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:23:23: value findById is not a member of com.example.dvdlibrary.dao.DVDRepo
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:23:23: value findById is not a member of com.example.dvdlibrary.dao.DVDRepo
 [error]     val dvd = dvdRepo.findById(id).orElse(null)
 [error]                       ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:24:9: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:24:9: not found: type ResponseEntity
 [error]     new ResponseEntity[DVD](dvd, HttpStatus.OK)
 [error]         ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:24:34: not found: value HttpStatus
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:24:34: not found: value HttpStatus
 [error]     new ResponseEntity[DVD](dvd, HttpStatus.OK)
 [error]                                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:28:41: not found: type ResponseEntity
-[error]   def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Unit] = {
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:28:41: not found: type ResponseEntity
+[error]   def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Void] = {
 [error]                                         ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:28:18: not found: type RequestBody
-[error]   def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Unit] = {
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:28:18: not found: type RequestBody
+[error]   def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Void] = {
 [error]                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:27:4: not found: type PostMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:27:4: not found: type PostMapping
 [error]   @PostMapping(Array("/add"))
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:29:13: value save is not a member of com.example.dvdlibrary.dao.DVDRepo
-[error]     dvdRepo.save(dvd)
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:31:30: value save is not a member of com.example.dvdlibrary.dao.DVDRepo
+[error]       val savedDVD = dvdRepo.save(dvd)
+[error]                              ^
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:32:11: not found: type ResponseEntity
+[error]       new ResponseEntity[Void](HttpStatus.CREATED)
+[error]           ^
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:32:32: not found: value HttpStatus
+[error]       new ResponseEntity[Void](HttpStatus.CREATED)
+[error]                                ^
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:35:13: not found: type ResponseEntity
+[error]         new ResponseEntity[Void](HttpStatus.INTERNAL_SERVER_ERROR)
 [error]             ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:30:5: not found: value ResponseEntity
-[error]     ResponseEntity.status(HttpStatus.CREATED).build()
-[error]     ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:30:27: not found: value HttpStatus
-[error]     ResponseEntity.status(HttpStatus.CREATED).build()
-[error]                           ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:35:48: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:35:34: not found: value HttpStatus
+[error]         new ResponseEntity[Void](HttpStatus.INTERNAL_SERVER_ERROR)
+[error]                                  ^
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:40:48: not found: type ResponseEntity
 [error]   def deleteDVD(@PathVariable("id") id: Long): ResponseEntity[Unit] = {
 [error]                                                ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:35:18: not found: type PathVariable
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:40:18: not found: type PathVariable
 [error]   def deleteDVD(@PathVariable("id") id: Long): ResponseEntity[Unit] = {
 [error]                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:34:4: not found: type DeleteMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:39:4: not found: type DeleteMapping
 [error]   @DeleteMapping(Array("/{id}"))
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:36:13: value deleteById is not a member of com.example.dvdlibrary.dao.DVDRepo
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:41:13: value deleteById is not a member of com.example.dvdlibrary.dao.DVDRepo
 [error]     dvdRepo.deleteById(id)
 [error]             ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:37:9: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:42:9: not found: type ResponseEntity
 [error]     new ResponseEntity[Unit](HttpStatus.NO_CONTENT)
 [error]         ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:37:30: not found: value HttpStatus
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:42:30: not found: value HttpStatus
 [error]     new ResponseEntity[Unit](HttpStatus.NO_CONTENT)
 [error]                              ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:41:71: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:46:71: not found: type ResponseEntity
 [error]   def updateDVD(@PathVariable("id") id: Long, @RequestBody dvd: DVD): ResponseEntity[DVD] = {
 [error]                                                                       ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:41:18: not found: type PathVariable
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:46:18: not found: type PathVariable
 [error]   def updateDVD(@PathVariable("id") id: Long, @RequestBody dvd: DVD): ResponseEntity[DVD] = {
 [error]                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:41:48: not found: type RequestBody
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:46:48: not found: type RequestBody
 [error]   def updateDVD(@PathVariable("id") id: Long, @RequestBody dvd: DVD): ResponseEntity[DVD] = {
 [error]                                                ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:40:4: not found: type PutMapping
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:45:4: not found: type PutMapping
 [error]   @PutMapping(Array("/{id}"))
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:3:14: object persistence is not a member of package javax
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:3:14: object persistence is not a member of package javax
 [error] import javax.persistence._
 [error]              ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:43:13: value save is not a member of com.example.dvdlibrary.dao.DVDRepo
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:48:13: value save is not a member of com.example.dvdlibrary.dao.DVDRepo
 [error]     dvdRepo.save(dvd)
 [error]             ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:44:9: not found: type ResponseEntity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:49:9: not found: type ResponseEntity
 [error]     new ResponseEntity[DVD](dvd, HttpStatus.OK)
 [error]         ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:44:34: not found: value HttpStatus
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDcontroller.scala:49:34: not found: value HttpStatus
 [error]     new ResponseEntity[DVD](dvd, HttpStatus.OK)
 [error]                                  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DirectorRepo.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DirectorRepo.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.data.jpa.repository.JpaRepository // Importing JpaRepository
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DirectorRepo.scala:6:28: not found: type JpaRepository
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\DirectorRepo.scala:6:28: not found: type JpaRepository
 [error] trait DirectorRepo extends JpaRepository[Director, Long] {
 [error]                            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\RatingRepo.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\RatingRepo.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.data.jpa.repository.JpaRepository // Importing JpaRepository
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\RatingRepo.scala:6:26: not found: type JpaRepository
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\RatingRepo.scala:6:26: not found: type JpaRepository
 [error] trait RatingRepo extends JpaRepository[Rating, Long] {
 [error]                          ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\StudioRepo.scala:4:12: object springframework is not a member of package org
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\StudioRepo.scala:4:12: object springframework is not a member of package org
 [error] import org.springframework.data.jpa.repository.JpaRepository // Importing JpaRepository
 [error]            ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\StudioRepo.scala:6:26: not found: type JpaRepository
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\dao\StudioRepo.scala:6:26: not found: type JpaRepository
 [error] trait StudioRepo extends JpaRepository[Studio, Long] {
 [error]                          ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:5:2: not found: type Entity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:5:2: not found: type Entity
 [error] @Entity
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:6:2: not found: type Table
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:6:2: not found: type Table
 [error] @Table(name = "dvd")
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:8:4: not found: type Id
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:8:4: not found: type Id
 [error]   @Id
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:9:4: not found: type GeneratedValue
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:9:4: not found: type GeneratedValue
 [error]   @GeneratedValue(strategy = GenerationType.IDENTITY)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:10:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:10:4: not found: type Column
 [error]   @Column(name = "dvdId", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:13:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:13:4: not found: type Column
 [error]   @Column(name = "title", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:16:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:16:4: not found: type Column
 [error]   @Column(name = "releaseDate", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:20:4: not found: type ManyToOne
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:20:4: not found: type ManyToOne
 [error]   @ManyToOne
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:21:4: not found: type JoinColumn
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:21:4: not found: type JoinColumn
 [error]   @JoinColumn(name = "directorId")
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:24:4: not found: type ManyToOne
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:24:4: not found: type ManyToOne
 [error]   @ManyToOne
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:25:4: not found: type JoinColumn
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:25:4: not found: type JoinColumn
 [error]   @JoinColumn(name = "studioId")
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:28:4: not found: type ManyToOne
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:28:4: not found: type ManyToOne
 [error]   @ManyToOne
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:29:4: not found: type JoinColumn
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:29:4: not found: type JoinColumn
 [error]   @JoinColumn(name = "ratingId")
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:32:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\DVD_.scala:32:4: not found: type Column
 [error]   @Column(name = "userRatingNote")
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:3:14: object persistence is not a member of package javax
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:3:14: object persistence is not a member of package javax
 [error] import javax.persistence._
 [error]              ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:5:2: not found: type Entity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:5:2: not found: type Entity
 [error] @Entity
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:6:2: not found: type Table
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:6:2: not found: type Table
 [error] @Table(name = "director")
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:8:4: not found: type Id
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:8:4: not found: type Id
 [error]   @Id
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:9:4: not found: type GeneratedValue
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:9:4: not found: type GeneratedValue
 [error]   @GeneratedValue(strategy = GenerationType.IDENTITY)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:10:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:10:4: not found: type Column
 [error]   @Column(name = "directorId", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:13:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\director.scala:13:4: not found: type Column
 [error]   @Column(name = "directorName", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:3:14: object persistence is not a member of package javax
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:3:14: object persistence is not a member of package javax
 [error] import javax.persistence._
 [error]              ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:4:2: not found: type Entity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:4:2: not found: type Entity
 [error] @Entity
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:5:2: not found: type Table
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:5:2: not found: type Table
 [error] @Table(name = "mpaaRating")
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:7:4: not found: type Id
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:7:4: not found: type Id
 [error]   @Id
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:8:4: not found: type GeneratedValue
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:8:4: not found: type GeneratedValue
 [error]   @GeneratedValue(strategy = GenerationType.IDENTITY)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:9:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:9:4: not found: type Column
 [error]   @Column(name = "ratingId", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:12:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\rating.scala:12:4: not found: type Column
 [error]   @Column(name = "rating", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:3:14: object persistence is not a member of package javax
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:3:14: object persistence is not a member of package javax
 [error] import javax.persistence._
 [error]              ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:5:2: not found: type Entity
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:5:2: not found: type Entity
 [error] @Entity
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:6:2: not found: type Table
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:6:2: not found: type Table
 [error] @Table(name = "studio")
 [error]  ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:8:4: not found: type Id
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:8:4: not found: type Id
 [error]   @Id
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:9:4: not found: type GeneratedValue
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:9:4: not found: type GeneratedValue
 [error]   @GeneratedValue(strategy = GenerationType.IDENTITY)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:10:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:10:4: not found: type Column
 [error]   @Column(name = "studioId", nullable = false)
 [error]    ^
-[error] C:\Users\nicol\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:13:4: not found: type Column
+[error] C:\Users\podob\IdeaProjects\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\model\studio.scala:13:4: not found: type Column
 [error]   @Column(name = "studioName", nullable = false)
 [error]    ^
-[error] 85 errors found
+[error] 87 errors found
