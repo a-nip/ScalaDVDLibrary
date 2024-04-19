@@ -4,7 +4,7 @@ import com.example.dvdlibrary.model.DVD
 import org.springframework.data.jpa.repository.{JpaRepository, Query}
 import org.springframework.stereotype.Repository
 
-import scala.collection.immutable.List
+import java.util.List
 
 @Repository
 trait DVDRepo extends JpaRepository[DVD, Long] {

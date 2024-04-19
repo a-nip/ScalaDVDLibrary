@@ -7,6 +7,7 @@ import org.springframework.dao.DataAccessException
 import org.springframework.stereotype.Service
 
 import java.time.LocalDate
+import java.util.Collections.emptyList
 
 
 @Service
@@ -39,10 +40,10 @@ class DVDservice {
 
   }
 
-  def findByDirectorId(id: Long): List[DVD] = {
+  def findByDirectorId(id: Long): java.util.List[DVD] = {
     try {
       val dvdList = dvdRepo.findDVDsByDirectorId(id)
-      if (dvdList.nonEmpty) {
+      if (!dvdList.isEmpty) {
         dvdList
       } else {
         throw new DVDNotFoundException()
@@ -86,49 +87,49 @@ class DVDservice {
     }
   }
 
-  def findByDirectorName(name: String): List[DVD] = {
+  def findByDirectorName(name: String): java.util.List[DVD] = {
     val foundDvd = dvdRepo.findDVDsByDirectorName(name)
 
-    if (foundDvd.nonEmpty)
+    if (!foundDvd.isEmpty)
       foundDvd
     else
-      List.empty
+      emptyList()
   }
 
-  def findDVDsByStudioName(studioName: String): List[DVD] = {
+  def findDVDsByStudioName(studioName: String): java.util.List[DVD] = {
     val foundDvds = dvdRepo.findDVDsByStudioName(studioName)
 
-    if (foundDvds.nonEmpty)
+    if (!foundDvds.isEmpty)
       foundDvds
     else
-      List.empty
+      emptyList()
   }
 
-  def findDVDsByTitle(title: String): List[DVD] = {
+  def findDVDsByTitle(title: String): java.util.List[DVD] = {
     val foundDvds = dvdRepo.findDVDsByTitle(title)
 
-    if (foundDvds.nonEmpty)
+    if (!foundDvds.isEmpty)
       foundDvds
     else
-      List.empty
+      emptyList()
   }
 
-  def findDVDsByReleaseYear(year: Int): List[DVD] = {
+  def findDVDsByReleaseYear(year: Int): java.util.List[DVD] = {
     val foundDvds = dvdRepo.findDVDsByReleaseYear(year)
 
     if (!foundDvds.isEmpty)
       foundDvds
     else
-      List.empty
+      emptyList()
   }
 
-  def findDVDsByRating(ratingTag: String): List[DVD] = {
+  def findDVDsByRating(ratingTag: String): java.util.List[DVD] = {
     val foundDvds = dvdRepo.findDVDsByRating(ratingTag)
 
-    if (foundDvds.nonEmpty)
+    if (!foundDvds.isEmpty)
       foundDvds
     else
-      List.empty
+      emptyList()
   }
   }
 
