@@ -1,5 +1,5 @@
 package com.example.dvdlibrary.model
-import java.time.LocalDate
+import java.sql.Date
 import javax.persistence._
 
 @Entity
@@ -14,7 +14,7 @@ class DVD {
   var title: String = _
 
   @Column(name = "releaseDate", nullable = false)
-  var releaseDate: LocalDate = _
+  var releaseDate: Date = _
 
 
   @ManyToOne
@@ -35,7 +35,7 @@ class DVD {
   // Getters
   def getId: Long = id
   def getTitle: String = title
-  def getReleaseDate: LocalDate = releaseDate
+  def getReleaseDate: Date = releaseDate
   def getDirector: Director = director
   def getStudio: Studio = studio
   def getRating: Rating = rating
@@ -44,7 +44,7 @@ class DVD {
   // Setters
   def setId(id: Long): Unit = this.id = id
   def setTitle(title: String): Unit = this.title = title
-  def setReleaseDate(releaseDate: LocalDate): Unit = this.releaseDate = releaseDate
+  def setReleaseDate(releaseDate: Date): Unit = this.releaseDate = releaseDate
   def setDirector(director: Director): Unit = this.director = director
   def setStudio(studio: Studio): Unit = this.studio = studio
   def setRating(rating: Rating): Unit = this.rating = rating

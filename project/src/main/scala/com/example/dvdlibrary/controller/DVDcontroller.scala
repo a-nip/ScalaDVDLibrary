@@ -60,8 +60,18 @@ class DVDController @Autowired()(private val dvdRepo: DVDRepo) {
 
   @PutMapping(Array("/{id}"))
   def updateDVD(@PathVariable("id") id: Long, @RequestBody dvd: DVD): ResponseEntity[DVD] = {
-    dvd.setId(id) // Set the ID of the DVD object
-    dvdRepo.save(dvd)
-    new ResponseEntity[DVD](dvd, HttpStatus.OK)
+    try {
+      dvdRepo.updateDVDById(id, dvd.getTitle, dvd.getReleaseDate, dvd.getDirector.getId, dvd.getStudio.getId,
+        dvd.getRating.getId, dvd.getUserRatingNote)
+      val updatedDVD = dvdRepo.findById(id).orElse(null)
+      if (updatedDVD != null) {
+        ResponseEntity.ok(updatedDVD)
+      } else {
+        ResponseEntity.notFound().build()
+      }
+    } catch {
+      case ex: Exception =>
+        ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+    }
   }
 }
