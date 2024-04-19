@@ -1,5 +1,7 @@
 package com.example.dvdlibrary.model
+
 import javax.persistence.*
+
 @Entity
 @Table(name = "mpaaRating")
 class Rating {

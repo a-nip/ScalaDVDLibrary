@@ -1,4 +1,5 @@
 package com.example.dvdlibrary.model
+
 import java.time.LocalDate
 import javax.persistence.*
 
@@ -15,8 +16,7 @@ class DVD {
 
   @Column(name = "releaseDate", nullable = false)
   var releaseDate: LocalDate = _
-
-
+  
   @ManyToOne
   @JoinColumn(name = "directorId")
   var director: Director = _

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class DVDLibraryApplication
+class App
 
-object DVDLibraryApplication {
+object App {
   def main(args: Array[String]): Unit = {
-    SpringApplication.run(classOf[DVDLibraryApplication], args*)
+    SpringApplication.run(classOf[App], args*)
   }
 }
