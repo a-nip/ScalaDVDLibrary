@@ -1,0 +1,10 @@
+[error] C:\Users\brand\OneDrive\Documents\wiley-edge\repos\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDController.scala:7:1: expected class or object definition
+[error] <<<<<<< HEAD:project/src/main/scala/com/example/dvdlibrary/controller/DVDcontroller.scala
+[error] ^
+[error] C:\Users\brand\OneDrive\Documents\wiley-edge\repos\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDController.scala:11:1: expected class or object definition
+[error] =======
+[error] ^
+[error] C:\Users\brand\OneDrive\Documents\wiley-edge\repos\ScalaDVDLibrary\project\src\main\scala\com\example\dvdlibrary\controller\DVDController.scala:13:1: expected class or object definition
+[error] >>>>>>> main:project/src/main/scala/com/example/dvdlibrary/controller/DVDController.scala
+[error] ^
+[error] three errors found
