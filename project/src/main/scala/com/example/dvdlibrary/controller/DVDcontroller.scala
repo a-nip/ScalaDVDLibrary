@@ -4,6 +4,7 @@ import com.example.dvdlibrary.model.DVD
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.{HttpStatus, ResponseEntity}
 import org.springframework.web.bind.annotation._
+import com.example.dvdlibrary.service.DVDservice
 
 
 @RestController
@@ -12,42 +13,34 @@ import org.springframework.web.bind.annotation._
 class DVDController {
 
   @Autowired
-  private var dvdRepo: DVDRepo = _
+  private var dvdService: DVDservice = _
   @GetMapping(Array("/dvds"))
   def allDVDs(): ResponseEntity[java.util.List[DVD]] = {
-    val dvds = dvdRepo.findAll()
+    val dvds = dvdService.getAllDvds
     ResponseEntity.status(HttpStatus.OK).body(dvds)
   }
   @GetMapping(Array("/{id}"))
   def getDVDById(@PathVariable("id") id: Long): ResponseEntity[DVD] = {
-    val dvd = dvdRepo.findById(id).orElse(null)
+    val dvd = dvdService.findById(id)
     new ResponseEntity[DVD](dvd, HttpStatus.OK)
   }
 
   @PostMapping(Array("/add"))
-  def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Void] = {
-    try {
-      //  JPA handles the foreign key associations
-      val savedDVD = dvdRepo.save(dvd)
-      new ResponseEntity[Void](HttpStatus.CREATED)
-    } catch {
-      case ex: Exception =>
-        new ResponseEntity[Void](HttpStatus.INTERNAL_SERVER_ERROR)
-    }
+  def addNewDVD(@RequestBody dvd: DVD): ResponseEntity[Unit] = {
+    dvdService.addDVD(dvd)
+    ResponseEntity.status(HttpStatus.CREATED).build()
   }
-
 
 
   @DeleteMapping(Array("/{id}"))
   def deleteDVD(@PathVariable("id") id: Long): ResponseEntity[Unit] = {
-    dvdRepo.deleteById(id)
+    dvdService.deleteDVD(id)
     new ResponseEntity[Unit](HttpStatus.NO_CONTENT)
   }
 
   @PutMapping(Array("/{id}"))
   def updateDVD(@PathVariable("id") id: Long, @RequestBody dvd: DVD): ResponseEntity[DVD] = {
-    dvd.setId(id) // Set the ID of the DVD object
-    dvdRepo.save(dvd)
+    dvdService.updateDVD(id, dvd)
     new ResponseEntity[DVD](dvd, HttpStatus.OK)
   }
 }
