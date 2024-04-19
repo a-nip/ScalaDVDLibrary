@@ -4,24 +4,38 @@ import com.example.dvdlibrary.model.DVD
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.{HttpStatus, ResponseEntity}
 import org.springframework.web.bind.annotation._
+import java.util.{List => JavaList}
+import scala.jdk.CollectionConverters._
 
 
 @RestController
 @RequestMapping(Array("/dvd"))
 @CrossOrigin
-class DVDController {
+class DVDController @Autowired()(private val dvdRepo: DVDRepo) {
 
-  @Autowired
-  private var dvdRepo: DVDRepo = _
   @GetMapping(Array("/dvds"))
-  def allDVDs(): ResponseEntity[java.util.List[DVD]] = {
-    val dvds = dvdRepo.findAll()
-    ResponseEntity.status(HttpStatus.OK).body(dvds)
+  def allDVDs(): ResponseEntity[JavaList[DVD]] = {
+    try {
+      val dvds = dvdRepo.findAllDVDs().asJava
+      ResponseEntity.status(HttpStatus.OK).body(dvds)
+    } catch {
+      case ex: Exception =>
+        ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null)
+    }
   }
   @GetMapping(Array("/{id}"))
   def getDVDById(@PathVariable("id") id: Long): ResponseEntity[DVD] = {
-    val dvd = dvdRepo.findById(id).orElse(null)
-    new ResponseEntity[DVD](dvd, HttpStatus.OK)
+    try {
+      val dvd = dvdRepo.findDVDById(id)
+      if (dvd != null) {
+        new ResponseEntity[DVD](dvd, HttpStatus.OK)
+      } else {
+        new ResponseEntity[DVD](HttpStatus.NOT_FOUND)
+      }
+    } catch {
+      case ex: Exception =>
+        new ResponseEntity[DVD](HttpStatus.INTERNAL_SERVER_ERROR)
+    }
   }
 
   @PostMapping(Array("/add"))

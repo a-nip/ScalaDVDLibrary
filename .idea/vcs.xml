@@ -2,5 +2,14 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../VendingMachine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../c385-java-basics-mandatory-code-factorial-brandon-wiley-edge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../datetime-function-brandon-wiley-edge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../final-java-project-team-4-bfn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../flooring-mastery-code-team-7" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../full-stack-school-brandon-wiley-edge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../salary-calculator-brandon-wiley-edge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../scala-dvd-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../school-database-for-c385-brandon-wiley-edge" vcs="Git" />
   </component>
 </project>
